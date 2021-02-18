@@ -1,0 +1,944 @@
+// @import "../../sass/settings";
+
+.tc{
+    .panel{
+        tspan{
+            font-family: 'Noto Sans TC', sans-serif;
+            // letter-spacing: vw-calc(-4);
+            // writing-mode: vertical-rl;
+            // text-orientation: upright;
+            stroke-width: vw-calc(.5);
+        }
+        #mainWrap{
+            #starter{
+                #text{
+                    width:vw-calc(170);
+                    -webkit-text-stroke: vw-calc(1);
+                }
+            }
+            #contentWrap #content section{
+                .label{
+                    &#label34,
+                    &#labelback{
+                        -webkit-text-stroke: vw-calc(.5);
+                        font-weight: bold;
+                    }
+                }
+                .detailWrap .detail{
+                    padding-right:vw-calc(60);
+                }
+            }
+        }
+    }
+}
+.sc{
+    .panel{
+        tspan{
+            font-family: 'Noto Sans SC', sans-serif;
+            stroke-width: vw-calc(.5);
+        }
+        #mainWrap{
+            #starter{
+                #text{
+                    width:vw-calc(170);
+                    -webkit-text-stroke: vw-calc(1);
+                }
+            }
+            #contentWrap #content section{
+                .label{
+                    &#label34,
+                    &#labelback{
+                        -webkit-text-stroke: vw-calc(.5);
+                        font-weight: bold;
+                    }
+                }
+                .detailWrap .detail{
+                    padding-right:vw-calc(60);
+                }
+            }
+        }
+    }
+}
+.panel{
+    height:100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    &#saikung{
+        width:calc(100% - 6.5vw);
+        transform: translate3d(87vw, 0,0);
+        &.showPanel1{
+            transform: translate3d(70vw, 0,0);
+        }
+        &.openPanel1,
+        &.openPanel2{
+            transition-duration: .6s;
+            transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+            transform: translate3d(6.5vw, 0,0);
+        }
+        #mainWrap{
+            #starter{
+                #map{
+                    width:vw-calc(1277);
+                    height:vw-calc(800);
+                    background:url('../page/saikung/images/island.png') center no-repeat;
+                    background-size:cover;
+                    .islandImg{
+                        &#islandImg1{
+                            width:vw-calc(404);
+                            // height:vw-calc(265);
+                            top:vw-calc(-23);
+                            left:vw-calc(104);
+                        }
+                        &#islandImg2{
+                            width:vw-calc(429);
+                            // height:vw-calc(275);
+                            top:vw-calc(40);
+                            left:vw-calc(600);
+                            img{
+                                width:100%;
+                            }
+                            span{
+                                width: 115%;
+                                position: relative;
+                                left:50%;
+                                transform: translate3d(-50%,0,0);
+                            }
+                        }
+                        &#islandImg3{
+                            width:vw-calc(429);
+                            // height:vw-calc(320);
+                            top:vw-calc(205);
+                            left:vw-calc(953);
+                        }
+                        &#islandImg4{
+                            width:vw-calc(486);
+                            // height:vw-calc(280);
+                            top:vw-calc(420);
+                            left:vw-calc(248);
+                        }
+                    }
+                }
+            }
+            #contentWrap{
+                &.activeSection1{
+                    #content{
+                        &.zip{
+                            .img{
+                                clip-path: polygon(15% 0%, 34% 10%, 40% 30%, 22% 52%, 15% 78%, 13% 100%, 100% 100%, 100% 0%);
+                            }
+                        }
+                    }
+                }
+                &.activeSection2{
+                    #content{
+                        &.zip{
+                            .img{
+                                clip-path: polygon(10% 0%, 33% 20%, 36% 50%, 18% 67%, 13% 83%, 12% 100%, 100% 100%, 100% 0%);
+                            }
+                        }
+                    }
+                }
+                &.activeSection3{
+                    #content{
+                        &.zip{
+                            .img{
+                                clip-path: polygon(16% 0%, 18% 18%, 40% 39%, 27% 70%, 15% 71%, 12% 100%, 100% 100%, 100% 0%);
+                            }
+                        }
+                    }
+                }
+                &.activeSection4{
+                    #content{
+                        &.zip{
+                            .img{
+                                clip-path: polygon(19% 0%, 23% 33%, 37% 49%, 31% 74%, 9% 81%, 3% 100%, 100% 100%, 100% 0%);
+                            }
+                        }
+                    }
+                }
+                #content{
+                    &.expand{
+                        .img{
+                            clip-path: polygon(21% 0%, 36% 16%, 35% 40%, 36% 70%, 31% 90%, 15% 100%, 100% 100%, 100% 0%);
+                        }
+                    }
+                    section{
+                        &#section02{
+                            .detailWrap{
+                                transform: translate3d(vw-calc(100), vw-calc(270), 0);
+                            }
+                        }
+                        &#section03{
+                            .detailWrap{
+                                transform: translate3d(vw-calc(100), vw-calc(390), 0);
+                            }
+                        }
+                        &#section04{
+                            .detailWrap{
+                                transform: translate3d(vw-calc(100), vw-calc(460), 0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &#northeast{
+        width:calc(100% - 11.5vw);
+        transform: translate3d(94vw, 0,0);
+        &.openPanel1{
+            transition-delay: 0s !important;
+            transition-duration: .8s;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            transform: translate3d(94vw, 0,0);
+        }
+        &.openPanel2{
+            transition-delay: .03s;
+            transition-duration: .6s;
+            transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+            transform: translate3d(11.5vw, 0,0);
+        }
+        &.showPanel2{
+            transform: translate3d(86vw, 0,0);
+        }
+        #circleWrap{
+            .circle{
+                & > span{
+                    transform: translate3d(10%, -20%, 0) rotate(5deg);
+                }
+            }
+        }
+        #mainWrap{
+            #starter{
+                #map{
+                    width:vw-calc(1385);
+                    height:vw-calc(860);
+                    background:url('../page/northeast/images/island.png') center no-repeat;
+                    background-size:cover;
+                    .islandImg{
+                        &#islandImg1{
+                            width:vw-calc(404);
+                            // height:vw-calc(275);
+                            top:vw-calc(210);
+                            left:vw-calc(164);
+                            img{
+                                width:100%;
+                            }
+                        }
+                        &#islandImg2{
+                            width:vw-calc(486);
+                            // height:vw-calc(280);
+                            top:vw-calc(475);
+                            left:vw-calc(515);
+                        }
+                        &#islandImg3{
+                            width:vw-calc(429);
+                            // height:vw-calc(355);
+                            top:vw-calc(345);
+                            left:vw-calc(970);
+                            img{
+                                width:100%;
+                            }
+                        }
+                        &#islandImg4{
+                            width:vw-calc(429);
+                            // height:vw-calc(275);
+                            top:vw-calc(60);
+                            left:vw-calc(953);
+                            img{
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
+            #contentWrap{
+                &.activeSection1{
+                    #content{
+                        &.zip{
+                            .img{
+                                clip-path: polygon(15% 0%, 32% 10%, 41% 25%, 12% 60%, 20% 84%, 13% 100%, 100% 100%, 100% 0%);
+                            }
+                        }
+                    }
+                }
+                &.activeSection2{
+                    #content{
+                        &.zip{
+                            .img{
+                                clip-path: polygon(20% 0%, 30% 19%, 32% 44%, 20% 65%, 19% 90%, 12% 100%, 100% 100%, 100% 0%);
+                            }
+                        }
+                    }
+                }
+                &.activeSection3{
+                    #content{
+                        &.zip{
+                            .img{
+                                clip-path: polygon(20% 0%, 24% 18%, 34% 30%, 31% 57%, 16% 74%, 13% 100%, 100% 100%, 100% 0%);
+                            }
+                        }
+                    }
+                }
+                &.activeSection4{
+                    #content{
+                        &.zip{
+                            .img{
+                                clip-path: polygon(19% 0%, 22% 29%, 35% 36%, 28% 77%, 9% 83%, 3% 100%, 100% 100%, 100% 0%);
+                            }
+                        }
+                    }
+                }
+                #content{
+                    section{
+                        &#section01{
+                            .detailWrap{
+                                transform: translate3d(vw-calc(30), vw-calc(140), 0);
+                            }
+                        }
+                        &#section02{
+                            .detailWrap{
+                                transform: translate3d(vw-calc(30), vw-calc(270), 0);
+                            }
+                        }
+                        &#section03{
+                            .detailWrap{
+                                transform: translate3d(vw-calc(30), vw-calc(340), 0);
+                            }
+                        }
+                        &#section04{
+                            .detailWrap{
+                                transform: translate3d(vw-calc(30), vw-calc(420), 0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.hidePanel{
+        transform: translate3d(100vw, 0, 0) !important;
+    }
+    .big{
+        @include setFont(25, 36);
+    }
+    .hide{
+        opacity: 0;
+        visibility: hidden;
+    }
+    svg{
+        height:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 2;
+        *{
+            opacity: 1;
+            visibility: visible;
+            transition: opacity .6s cubic-bezier(0.645, 0.045, 0.355, 1), visibility .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition-delay: .2s;
+            &.hide{
+                transition-delay: 0s;
+                // tspan{
+                //     opacity: 0;
+                //     visibility: hidden;
+                // }
+            }
+        }
+        &#svgShadow{
+            position: absolute;
+            top:0;
+            left:vw-calc(-39);
+            pointer-events: none;
+        }
+        .animPath{
+            stroke-dasharray:0, 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .2s cubic-bezier(0.645, 0.045, 0.355, 1), visibility .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+            &.active{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        text{
+            tspan{
+                font-family:'Exo', 'Noto Sans TC', sans-serif;
+                font-weight:bold;
+                font-size:18px;
+                letter-spacing:1.6px;
+                fill:$moredrakblue;
+                stroke: $moredrakblue;
+                stroke-width: vw-calc(2);
+            }
+        }
+        // circle{
+        //     transition: fill .6s cubic-bezier(0.19, 1, 0.22, 1);
+        //     &.active{
+        //         fill:$yellow;
+        //     }
+        // }
+    }
+
+    #circleWrap{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .6s cubic-bezier(0.645, 0.045, 0.355, 1), visibility .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition-delay: .2s;
+        position: relative;
+        z-index:2;
+        &.hide{
+            transition-delay: 0s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .circle{
+            width:vw-calc(33);
+            height:vw-calc(33);
+            border-radius: 50%;
+            border:vw-calc(3.5) solid $yellow;
+            background:$lightwhite;
+            position: absolute;
+            top:0;
+            left:0;
+            // z-index: 5;
+            transition: background-color .3s cubic-bezier(0.19, 1, 0.22, 1);
+            &.active{
+                background:$yellow;
+                & > span{
+                    color:$drakblue;
+                    // transform: translate3d(10%, -20%, 0) rotate(-10deg);
+                }
+            }
+            & > span{
+                width:100%;
+                height:100%;
+                position: absolute;
+                top:0;
+                left:100%;
+                color:$grey;
+                transform: translate3d(10%, -20%, 0) rotate(-10deg);
+                transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+                span{
+                    position: absolute;
+                    top:0;
+                    left:100%;
+                    @include setFont(20, 24);
+                    letter-spacing:vw-calc(1);
+                    -webkit-text-stroke: 0;
+                    white-space: nowrap;
+                    transform-origin: 0% 50%;
+                }
+            }
+        }
+    }
+    // #textWrap{
+    //     opacity: 1;
+    //     visibility: visible;
+    //     transition: opacity .6s cubic-bezier(0.645, 0.045, 0.355, 1), visibility .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+    //     transition-delay: .2s;
+    //     position: relative;
+    //     z-index: 3;
+    //     &.hide{
+    //         transition-delay: 0s;
+    //         opacity: 0;
+    //         visibility: hidden;
+    //     }
+    //     .pointTitle{
+    //         position: absolute;
+    //         font-size:vw-calc(20);
+    //         letter-spacing:2.5px;
+    //         transform-origin: left center;
+    //         z-index: 2;
+    //         opacity: 0;
+    //         visibility: hidden;
+    //         &#t1{
+    //             transform: translate3d(vw-calc(170),vw-calc(65),0) rotate(-6deg);
+    //         }
+    //         &#t2{
+    //             transform: translate3d(vw-calc(185),vw-calc(147),0) rotate(-6deg);
+    //         }
+    //         &#t3{
+    //             transform: translate3d(vw-calc(205),vw-calc(230),0) rotate(-6deg);
+    //         }
+    //         &#t4{
+    //             transform: translate3d(vw-calc(220),vw-calc(312),0) rotate(-6deg);
+    //         }
+    //     }
+    // }
+    #mainWrap{
+        width:calc(100% - #{vw-calc(70)});
+        height: 100vh;
+        background:$lightwhite url('../page/saikung/images/bg.svg') 0 center;
+        background-size: vw-calc(275);
+        margin-left: vw-calc(70);
+        position: relative;
+        overflow: hidden;
+        #starter{
+            width:calc(100% - #{vw-calc(100)});
+            height:100%;
+            position: absolute;
+            top:0;
+            right:0;
+            perspective: 600px;
+            z-index: 1;
+            overflow: hidden;
+            background:$lightwhite url('../page/saikung/images/contour-map@2x.png') center center no-repeat;
+            background-size:cover;
+            #text{
+                width:vw-calc(253);
+                position: absolute;
+                top:vw-calc(93);
+                right:vw-calc(150);
+                text-align: center;
+                color:$drakblue;
+                @include setFont(27, 36);
+                -webkit-text-stroke: vw-calc(2);
+                letter-spacing: vw-calc(3);
+                &:after{
+                    content:'';
+                    width:vw-calc(129);
+                    height:vw-calc(115);
+                    background:url('../page/saikung/images/clickarrow.png') center no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top:30%;
+                    right:105%;
+                }
+            }
+            #map{
+                // width:vw-calc(1277);
+                // height:vw-calc(800);
+                // background:url('../page/saikung/images/island.png') center no-repeat;
+                // background-size:cover;
+                position: absolute;
+                bottom:0;
+                left:0;
+                perspective: 550px;
+                transform-style: preserve-3d;
+                transform-origin: center bottom;
+                // transform: rotate3d(1, 0, 0, 0deg);
+                .islandImg{
+                    position: absolute;
+                    cursor: pointer;
+                    transform: translate3d(0,0,1px);
+                    transform-origin: center bottom;
+                    // &#islandImg1{
+                    //     width:vw-calc(404);
+                    //     height:vw-calc(265);
+                    //     top:vw-calc(-23);
+                    //     left:vw-calc(104);
+                    // }
+                    // &#islandImg2{
+                    //     width:vw-calc(429);
+                    //     height:vw-calc(275);
+                    //     top:vw-calc(40);
+                    //     left:vw-calc(600);
+                    //     img{
+                    //         width:100%;
+                    //     }
+                    // }
+                    // &#islandImg3{
+                    //     width:vw-calc(429);
+                    //     height:vw-calc(320);
+                    //     top:vw-calc(205);
+                    //     left:vw-calc(953);
+                    // }
+                    // &#islandImg4{
+                    //     width:vw-calc(486);
+                    //     height:vw-calc(280);
+                    //     top:vw-calc(420);
+                    //     left:vw-calc(248);
+                    // }
+                    img{
+                        width:80%;
+                        margin:auto;
+                    }
+                    span{
+                        // display: none;
+                        width:100%;
+                        letter-spacing: vw-calc(6);
+                        // position: absolute;
+                        // bottom:0;
+                        // left:50%;
+                        @include setFont(36, 50);
+                        text-align: center;
+                        pointer-events: none;
+                        color:$moredrakblue;
+                        background: #e8e0d7;
+                        margin-top:vw-calc(-40);
+                        padding:vw-calc(3) 0;
+                        display: block;
+                        // position: absolute;
+                        // top: 80%;
+                        z-index: -1;
+                        // transform: translate3d(-50%,0,0);
+                    }
+                }
+            }
+        }
+        #contentWrap{
+            width:100%;
+            height:100%;
+            margin-left: vw-calc(280);
+            position: relative;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            transition: opacity .3s cubic-bezier(0.645, 0.045, 0.355, 1), visibility .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            // #imageWrap{
+            //     width:calc(100% - #{vw-calc(70)});
+            //     height: 100%;
+            //     position: fixed;
+            //     top:0;
+            //     right:0;
+            //     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+            //     pointer-events: none;
+            //     z-index: 2;
+            //     ul{
+            //         width:100%;
+            //         height:100%;
+            //         position: relative;
+            //         li{
+            //             width:100%;
+            //             height:100%;
+            //             background-position: center;
+            //             background-repeat: no-repeat;
+            //             background-size: cover;
+            //             position: absolute;
+            //             top:0;
+            //             left:0;
+            //         }
+            //     }
+            // }
+            &.hide{
+                #content{
+                    section{
+                        & > div{
+                            &.active{
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+            #content{
+                width:100%;
+                &.expand{
+                    .img{
+                        clip-path: polygon(26% 0%, 33% 18%, 34% 40%, 34% 70%, 31% 90%, 15% 100%, 100% 100%, 100% 0%);
+                    }
+                }
+                &.zip{
+                    .img{
+                        clip-path: polygon(35% 0%, 34% 10%, 40% 30%, 22% 52%, 15% 78%, 13% 100%, 100% 100%, 100% 0%);
+                    }
+                    section{
+                        .bottomText.bottomText1{
+                            color:$white;
+                        }
+                    }
+                }
+                &.zip, &.expand{
+                    section{
+                        & > div{
+                            &.active{
+                                .detailWrap{
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                    }
+                }
+                section{
+                    // border-bottom: 1px solid #000;
+                    & > div{
+                        width:100%;
+                        height:100vh;
+                        transition: opacity .3s cubic-bezier(0.645, 0.045, 0.355, 1) .3s, visibility .3s cubic-bezier(0.645, 0.045, 0.355, 1) .3s;
+                        // border-bottom: 1px solid #ff0000;
+                        position: relative;
+                        z-index: 2;
+                        opacity: 0;
+                        visibility: hidden;
+                        &.active{
+                            transition-delay: 0s;
+                            opacity: 1;
+                            visibility: visible;
+                            z-index: 3;
+                        }
+                        &:last-child{
+                            border:0;
+                        }
+                    }
+                    .bottomText{
+                        width:30vw;
+                        position: fixed;
+                        left:vw-calc(230);
+                        bottom:vw-calc(28);
+                        font-weight: 500;
+                        letter-spacing: vw-calc(2);
+                        color:$white;
+                        z-index: 2;
+                        text-shadow: 0 rem-calc(3 20) #000;
+                        transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+                        &.bottomText1{
+                            display: none;
+                            color:$drakblue;
+                        }
+                        &.bottomText2{
+                            left:50vw;
+                        }
+                    }
+                    .detailWrap{
+                        position: fixed;
+                        top:0;
+                        left:vw-calc(80);
+                        z-index: 3;
+                        opacity: 0;
+                        visibility: hidden;
+                        transform: translate3d(vw-calc(100), vw-calc(160), 0);
+                        color:$drakblue;
+                        transition: opacity .3s cubic-bezier(0.645, 0.045, 0.355, 1), visibility .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                        .detail{
+                            width:vw-calc(500);
+                            position: absolute;
+                            top:0;
+                            left:0;
+                            padding-right:vw-calc(30);
+                            // padding: 0 vw-calc(56) 0 vw-calc(24);
+                            pointer-events: none;
+                            ul{
+                                li{
+                                    margin-top:vw-calc(20);
+                                    // display: inline;
+                                    &:first-child{
+                                        margin:0;
+                                    }
+                                }
+                            }
+                            .title{
+                                span{
+                                    // display: inline;
+                                    // background-color: $lightwhite;
+                                    // white-space:pre-wrap;
+                                    // box-shadow: 5px 0 0 $lightwhite;
+                                }
+                            }
+                            .smallTitle{
+                                position: relative;
+                                z-index: 1;
+                                letter-spacing: vw-calc(1);
+                                padding-bottom: vw-calc(15);
+                                -webkit-text-stroke: vw-calc(1.5);
+                                span{
+                                    display: inline-block;
+                                }
+                            }
+                            .mainTitle{
+                                letter-spacing: 0;
+                                -webkit-text-stroke: 0;
+                                padding-right:vw-calc(30);
+                                // span{
+                                //     display: inline;
+                                // }
+                                // .big{
+                                    // position: relative;
+                                    // @include setFont(80, 140);
+                                    // line-height: normal;
+                                    // text-transform: initial;
+                                // }
+                            }
+                            .moreDetails{
+                                margin-top: vw-calc(40);
+                                padding-right:vw-calc(20);
+                                color:$moredrakblue;
+                                #outerWrap{
+                                    height:0;
+                                    overflow: hidden;
+                                    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+                                    .wrap{
+                                        // display:inline;
+                                        // white-space:pre-wrap;
+                                        p{
+                                            @include setFont(22, 28);
+                                            // background-color: $lightwhite;
+                                            // box-shadow: 10px 0 0 $lightwhite;
+                                            // display: inline;
+                                        }
+                                        ul{
+                                            // display: inline;
+                                            // &:first-child:before{
+                                            //     display: none;
+                                            // }
+                                            // &:before{
+                                            //     content:'';
+                                            //     clear: both;
+                                            //     display: block;
+                                            //     width: 100%;
+                                            // }
+                                            li{
+                                                position: relative;
+                                                padding-left:vw-calc(25);
+                                                &:before{
+                                                    content:'';
+                                                    width: vw-calc(10);
+                                                    height: vw-calc(10);
+                                                    background:$moredrakblue;
+                                                    border-radius: 50%;
+                                                    position: absolute;
+                                                    left:0;
+                                                    top:vw-calc(10);
+                                                }
+                                            //     padding-top:vw-calc(30);
+                                                // display: inline;
+                                                // &:first-child{
+                                                    // padding:0;
+                                                // }
+                                                // &:first-child:before{
+                                                //     display: none;
+                                                // }
+                                                // &:before{
+                                                //     content:'';
+                                                //     clear: both;
+                                                //     display: block;
+                                                //     width: 100%;
+                                                //     padding-top:vw-calc(30);
+                                                // }
+                                            }
+                                        }
+                                    }
+                                    &.active{
+                                        &+.moreBtn{
+                                            margin-top:vw-calc(30);
+                                            span{
+                                                &:nth-child(1){
+                                                    display: none;
+                                                }
+                                                &:nth-child(2){
+                                                    display: inline-block;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .moreBtn{
+                                    border-radius: vw-calc(60);
+                                    background:$drakblue;
+                                    display: inline-block;
+                                    color:$lightwhite;
+                                    font-size:vw-calc(20);
+                                    padding:vw-calc(13 40.5);
+                                    text-transform: uppercase;
+                                    pointer-events: initial;
+                                    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+                                    span{
+                                        &:nth-child(2){
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .label{
+                        position: fixed;
+                        top:0;
+                        right:0;
+                        z-index: 1;
+                        background:$yellow;
+                        padding:vw-calc(0 20);
+                        @include setFont(20);
+                        text-transform: uppercase;
+                        &#label02_1{
+                            top:40%;
+                            right:10%;
+                            span{
+                                width:vw-calc(274);
+                                height: vw-calc(130);
+                                background:url('../page/saikung/images/arrow1@2x.png') center no-repeat;
+                                background-size:100%;
+                                position: absolute;
+                                top:140%;
+                                right:40%;
+                            }
+                        }
+                        &#label02_2{
+                            top:70%;
+                            right:33%;
+                        }
+                        &#label03_1{
+                            top:40%;
+                            right:29%;
+                            span{
+                                width:vw-calc(274);
+                                height: vw-calc(130);
+                                background:url('../page/saikung/images/arrow1@2x.png') center no-repeat;
+                                background-size:100%;
+                                position: absolute;
+                                top:140%;
+                                right:40%;
+                            }
+                        }
+                        &#label03_2{
+                            top:10%;
+                            right:34%;
+                            span{
+                                width:vw-calc(274);
+                                height: vw-calc(130);
+                                background:url('../page/saikung/images/arrow2@2x.png') center no-repeat;
+                                background-size:100%;
+                                position: absolute;
+                                top:140%;
+                                left:40%;
+                            }
+                        }
+                        &#label34{
+                            width:vw-calc(200);
+                            text-align: center;
+                            top:50%;
+                            right:20%;
+                            color:$moredrakblue;
+                            padding:vw-calc(5 10);
+                            @include setFont(27,40);
+                            -webkit-text-stroke: vw-calc(2);
+                            &:before{
+                                content:'';
+                                width:vw-calc(129);
+                                height:vw-calc(115);
+                                background:url('../page/saikung/images/nextarrow.svg') center no-repeat;
+                                background-size:100%;
+                                position: absolute;
+                                bottom:100%;
+                                left:50%;
+                            }
+                        }
+                        &#labelback{
+                            // width:vw-calc(300);
+                            top:auto;
+                            bottom:10%;
+                            right:7%;
+                            padding:vw-calc(10 15);
+                            @include setFont(27,36);
+                            -webkit-text-stroke: vw-calc(2);
+                        }
+                    }
+                    .img{
+                        width:calc(100% - #{vw-calc(70)});
+                        height:100%;
+                        position: fixed;
+                        top:0;
+                        right:0;
+                        pointer-events: none;
+                        transition: clip-path .6s steps(3);
+                        clip-path: polygon(100% 0%, 100% 20%, 100% 40%, 100% 70%, 100% 80%, 100% 100%, 100% 100%, 100% 0%);
+                        box-shadow: inset 0 -80px 70px rgba(0,0,0,.8);
+                    }
+                }
+            }
+        }
+    }
+}

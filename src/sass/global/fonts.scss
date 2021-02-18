@@ -1,0 +1,68 @@
+
+
+// @import url("https://fonts.googleapis.com/css?family=Exo:700&display=swap");
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('http://fonts.googleapis.com/earlyaccess/notosanstc.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap');
+
+$defaultFont: 'Open Sans', 'Noto Sans TC', sans-serif;
+.exo{
+  font-family: 'Exo', sans-serif; 
+  -webkit-text-stroke: vw-calc(4);
+}
+.tc .exo{ 
+  font-family: 'Exo', 'Noto Sans TC', sans-serif; 
+  -webkit-text-stroke: vw-calc(1);
+}
+.sc .exo{ 
+  font-family: 'Exo', 'Microsoft JhengHei', sans-serif; 
+  -webkit-text-stroke: vw-calc(2);
+}
+.title{
+  letter-spacing: rem-calc(5);
+}
+
+@mixin setFont($fontsize: 34, $lineHeight: 48) {
+  font-size: #{$fontsize / 1920 * 100}vw;
+  line-height: #{$lineHeight / 1920 * 100}vw;
+}
+
+.small{
+  @include setFont(25, 30);
+}
+.mid{
+  @include setFont(43, 51);
+}
+.big, b{
+  @include setFont(176, 197);
+}
+
+h1, .h1 {
+  @include setFont(71, 90);
+}
+
+h2, .h2 {
+  @include setFont(40, 60);
+}
+h3, .h3{
+  font-size: 1.9vw;
+  line-height: 1.9vw;
+}
+h4, .h4 {
+  font-size: 1.2vw;
+  line-height: 1.2vw;
+}
+h5 {
+  
+}
+h6 {
+}
+
+// tablet
+// @media only screen and (max-width: $tablet) {
+//   @include setFont(22, 34);
+// }
+
+// mobile
+// @media only screen and (max-width: $mobile) {
+// }

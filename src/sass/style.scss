@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/Exo-Bold.woff2') format('woff2'),
+        url('../fonts/Exo-Bold.woff') format('woff'),
+        url('../fonts/Exo-Bold.ttf') format('truetype'),
+        url('../fonts/Exo-Bold.svg#Exo-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import "./_settings";
+
+
+@import "./global/reset";
+@import "./global/fonts";
+@import "./global/color";
+
+// Common
+@import "./common";
+
+// pages
+@import '../_component/Nav/nav.scss';
+@import '../page/home/home.scss';
+@import '../page/saikung/panel.scss';
+
+// IE
+// @import './global/ie';

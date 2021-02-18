@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="321" height="80" viewBox="0 0 321 80">
+    <g fill="#0A0E19" fill-rule="evenodd">
+        <path fill-rule="nonzero" d="M3.019 33l-.001 22.025H317.98L317.981 33H321v25H0V33z"/>
+        <path d="M1 20h106V0H1zM107 20h106V0H107v20zm3.018-2.96h99.964V2.96h-99.964v14.08zM213 20h106V0H213z"/>
+        <text font-family="Exo-Bold, Exo" font-size="14" font-weight="bold">
+            <tspan x="0" y="79">0</tspan>
+        </text>
+        <text font-family="Exo-Bold, Exo" font-size="14" font-weight="bold">
+            <tspan x="291" y="79">500</tspan>
+        </text>
+        <text font-family="Exo-Bold, Exo" font-size="14" font-weight="bold">
+            <tspan x="138" y="78">MILES</tspan>
+        </text>
+    </g>
+</svg>
